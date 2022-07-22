@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             
+             screens: {
+                'sm':"375px"
+
+             },
+
+             colors: {
+                'orange': 'hsl(26, 100%, 55%)',
+                'pale-orange': 'hsl(25, 100%, 94%)',
+                'light-grayish-blue':'hsl(223, 64%, 98%)',
+                'black':'hsl(0, 0%, 0%)'
+              },
+              fontFamily: {
+                'kumb': 'Kumbh Sans, sans-serif'
+              }
+
+           
+
+
+    
+              
+
+
+
+            }
+          }
+        }
+
+      </script>
+</head>
+<body class="font-kumb">
+    <header class="flex justify-between p-5">
+        <div class="flex">
+            <img class=" w-5 mx-2 lg:hidden" src="/images/icon-menu.svg" alt="menu">
+            <img src="/images/logo.svg" alt="sneakers">
+        </div>
+
+        <diV class="hidden lg:contents">
+            <ul class="flex">
+                <li>Collection</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </diV>
+
+        <diV class="flex">
+            <img class="mx-2" src="/images/icon-cart.svg" alt="cart">
+           <img class="w-5 " src="/images/image-avatar.png" alt="avatar">
+        </diV>
+    </header>
+
+
+    <section class="">
+        <img class= "h-50 "src="/images/image-product-1.jpg" alt="product1">
+        
+    </section>
+
+    <main class="p-5"> 
+        <section>
+            <h1 class="my-2 font-bold text-sm uppercase font-kumb text-orange">sneaker company</h1>
+
+            <article class="font-kumb">
+                <h1 class="font-bold text-2xl">Fall Limited Edition <br> Sneakers</h1>
+                <p class="my-6 text-md text-black opacity-40 font-bold">
+                    These low-profile sneakers are your perfect casual wear 
+                    companion.Featuring a durable rubber outer sole, they'll withstand everything 
+                    the weather can offer.
+                </p>
+            </article>
+        </section>
+
+        <section class="mt-10 flex justify-between ">
+            <div class="flex justify-between">
+                <p class="font-bold text-2xl">$125.00</p>
+                <p class="text-sm h-7 p-1 font-bold mx-4 text-orange bg-pale-orange">50%</p>
+            </div>
+            <div class="line-through"><p class="opacity-40">$250.00</p></div>
+            
+        </section>
+
+        <section class="my-7">
+            <div class="border rounded-md bg-light-grayish-blue flex justify-between p-2">
+                <span class="m-2"> <img src="/images/icon-plus.svg"></span>
+                <span class="font-bold m-1">0</span>
+                <span class="m-2.5"><img src="/images/icon-minus.svg"></span>
+            </div>
+           
+            <div class="my-5 border rounded-md w-full p-4 bg-orange text-white flex justify-center ">
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>
+                <p class="ml-4 text-sm ">Add to cart</p>
+            </div>
+        </section>
+
+
+    </main>
+    
+</body>
+</html>

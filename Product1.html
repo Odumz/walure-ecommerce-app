@@ -21,7 +21,8 @@
                 'orange': 'hsl(26, 100%, 55%)',
                 'pale-orange': 'hsl(25, 100%, 94%)',
                 'light-grayish-blue':'hsl(223, 64%, 98%)',
-                'black':'hsl(0, 0%, 0%)'
+                'black':'hsl(0, 0%, 0%)',
+                'white': 'hsl(0, 0%, 100%)'
               },
               fontFamily: {
                 'kumb': 'Kumbh Sans, sans-serif'
@@ -41,73 +42,206 @@
 
       </script>
 </head>
-<body class="font-kumb">
+<body class="body font-kumb lg:p-7 ">
     <header class="flex justify-between p-5">
-        <div class="flex">
-            <img class=" w-5 mx-2 lg:hidden" src="/images/icon-menu.svg" alt="menu">
-            <img src="/images/logo.svg" alt="sneakers">
-        </div>
-
-        <diV class="hidden lg:contents">
-            <ul class="flex">
-                <li>Collection</li>
-                <li>Men</li>
-                <li>Women</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </diV>
-
         <diV class="flex">
-            <img class="mx-2" src="/images/icon-cart.svg" alt="cart">
-           <img class="w-5 " src="/images/image-avatar.png" alt="avatar">
+            <div class="flex items-start lg:mx-4">
+                <svg class="menu pt-1 mx-2 h-5 lg:hidden" width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>
+                <svg width="138" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M8.217 20c4.761 0 7.519-.753 7.519-4.606 0-3.4-3.38-4.172-6.66-4.682l-.56-.085-.279-.041-.35-.053c-2.7-.405-3.18-.788-3.18-1.471 0-.478.49-1.331 2.843-1.331 2.455 0 3.493.647 3.493 1.87v.134h4.281v-.133c0-2.389-1.35-5.238-7.774-5.238-5.952 0-7.201 2.584-7.201 4.752 0 3.097 2.763 4.086 7.223 4.675.21.028.433.054.659.081 1.669.197 3.172.42 3.172 1.585 0 1.01-1.615 1.222-3.298 1.222-2.797 0-3.784-.593-3.784-1.92v-.134H.002L0 14.926v.317c.008.79.118 1.913 1.057 2.862C2.303 19.362 4.712 20 8.217 20Zm13.21 0v-7.49c0-2.104.547-4.423 4.176-4.423 3.915 0 3.778 2.777 3.768 4.042V20h4.18v-7.768c0-2.264-.176-7.766-6.732-7.766-2.778 0-4.192.911-5.195 2.28h-.197V4.467H17.22V20h4.207Zm21.959 0c5.094 0 7.787-2.07 8.217-5.405H47.53c-.386 1.02-1.63 1.72-4.143 1.72-2.721 0-3.962-1.03-4.25-3.106h12.527c.24-2.13-.029-5.417-3.026-7.44v.005c-1.312-.915-3.056-1.465-5.251-1.465-5.24 0-8.336 2.772-8.336 7.845 0 5.17 3.02 7.846 8.336 7.846Zm4.099-9.574h-8.188c.486-1.574 1.764-2.431 4.089-2.431 2.994 0 3.755 1.267 4.099 2.431ZM70.499 20V4.457H66.29V6.74h-.176c-1.053-1.377-2.809-2.283-5.677-2.283-6.433 0-7.225 5.293-7.253 7.635v.137c0 2.092.732 7.771 7.241 7.771 2.914 0 4.684-.818 5.734-2.169h.131V20H70.5Zm-8.854-3.623c-3.996 0-4.447-3.032-4.447-4.148 0-1.21.426-4.148 4.455-4.148 3.631 0 4.374 2.044 4.374 4.148 0 2.35-.742 4.148-4.382 4.148ZM88.826 20l-6.529-9.045 6.588-6.488h-5.827l-6.836 6.756V0h-4.187v19.954h4.187V16.94l3.02-2.976L83.6 20h5.226Zm9.9 0c5.094 0 7.786-2.07 8.217-5.405h-4.074c-.387 1.02-1.63 1.72-4.143 1.72-2.721 0-3.962-1.03-4.25-3.106h12.527c.24-2.13-.029-5.417-3.026-7.44v.005c-1.312-.915-3.057-1.465-5.251-1.465-5.24 0-8.336 2.772-8.336 7.845 0 5.17 3.02 7.846 8.336 7.846Zm4.098-9.574h-8.187c.485-1.574 1.763-2.431 4.089-2.431 2.994 0 3.755 1.267 4.098 2.431ZM112.76 20v-6.97c0-2.103.931-4.542 4.05-4.542 1.33 0 2.393.236 2.785.346l.67-3.976c-.728-.16-1.626-.392-2.757-.392-2.665 0-3.622.794-4.486 2.282h-.262V4.466h-4.21V20h4.21Zm17.221 0c4.761 0 7.519-.753 7.519-4.606 0-3.4-3.38-4.172-6.66-4.682l-.56-.085-.279-.041-.349-.053c-2.701-.405-3.181-.788-3.181-1.471 0-.478.49-1.331 2.843-1.331 2.455 0 3.493.647 3.493 1.87v.134h4.282v-.133c0-2.389-1.35-5.238-7.775-5.238-5.952 0-7.201 2.584-7.201 4.752 0 3.097 2.763 4.086 7.224 4.675.21.028.432.054.658.081 1.669.197 3.172.42 3.172 1.585 0 1.01-1.615 1.222-3.298 1.222-2.796 0-3.784-.593-3.784-1.92v-.134h-4.319l-.001.301v.317c.008.79.117 1.913 1.056 2.862 1.246 1.257 3.655 1.895 7.16 1.895Z" fill="#1D2026" fill-rule="nonzero"/></svg>
+            </div>
+    
+            <diV class="hidden lg:contents ">
+                <ul class="flex mx-10">
+                    <li class="mx-3">Collection</li>
+                    <li class="mx-3">Men</li>
+                    <li class="mx-3">Women</li>
+                    <li class="mx-3"><a href="/AboutUs.html">About</a></li>
+                    <li class="mx-3">Contact</li>
+                </ul>
+            </diV>
         </diV>
+        
+
+        <diV class="flex ">
+            <svg class="carticon" width="32" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+           <img class="h-6 " src="/images/image-avatar.png" alt="avatar">
+        </diV>
+
+       
     </header>
 
 
-    <section class="">
-        <img class= "h-50 "src="/images/image-product-1.jpg" alt="product1">
-        
-    </section>
+    <main class="lg:flex lg:p-6 lg:justify-center lg:items-center">
+        <section class=" lg:p-10">
+            <div class="relative">
+                <img class="previousIconMobile absolute bottom-20 top-20  h-10 border p-3 bg-white rounded-2xl lg:hidden" src="/images/icon-previous.svg">
+                <img class= "h-50 bigPictureMobile"src="/images/image-product-1.jpg" alt="product1">
+                <img class="nextIconMobile absolute right-0 top-20 bottom-20 h-10 border p-3 bg-white rounded-2xl lg:hidden" src="/images/icon-next.svg">
 
-    <main class="p-5"> 
-        <section>
-            <h1 class="my-2 font-bold text-sm uppercase font-kumb text-orange">sneaker company</h1>
-
-            <article class="font-kumb">
-                <h1 class="font-bold text-2xl">Fall Limited Edition <br> Sneakers</h1>
-                <p class="my-6 text-md text-black opacity-40 font-bold">
-                    These low-profile sneakers are your perfect casual wear 
-                    companion.Featuring a durable rubber outer sole, they'll withstand everything 
-                    the weather can offer.
-                </p>
-            </article>
-        </section>
-
-        <section class="mt-10 flex justify-between ">
-            <div class="flex justify-between">
-                <p class="font-bold text-2xl">$125.00</p>
-                <p class="text-sm h-7 p-1 font-bold mx-4 text-orange bg-pale-orange">50%</p>
             </div>
-            <div class="line-through"><p class="opacity-40">$250.00</p></div>
+            
+           
+           
+            <div class="hidden  h-2/3">
+                <img class= " mobilePics h-50" src="/images/image-product-1.jpg" alt="product1">
+                <img class= " mobilePics h-50" src="/images/image-product-2.jpg" alt="product1">
+                <img class= " mobilePics h-50" src="/images/image-product-3.jpg" alt="product1">
+                <img class= " mobilePics h-50" src="/images/image-product-4.jpg" alt="product1">
+    
+    
+            </div>
+
+            <div class="hidden lg:contents ">
+                <ul class=" flex my-2 p-2">
+                    <li class=" mx-2"><img class="product1  border rounded-md hover:border-orange hover:border-4 hover:bg-white" src="/images/image-product-1-thumbnail.jpg"></li>
+                    <li class=" mx-2"><img class="product1 border rounded-md hover:border-orange hover:border-4 hover:bg-white" src="/images/image-product-2-thumbnail.jpg"></li>
+                    <li class=" mx-2"><img class="product1 border rounded-md hover:border-orange hover:border-4 hover:bg-white" src="/images/image-product-3-thumbnail.jpg"></li>
+                    <li class=" mx-2"><img class="product1 border rounded-md hover:border-orange hover:border-4 hover:bg-white" src="/images/image-product-4-thumbnail.jpg"></li>
+                </ul>
+
+            </div>
             
         </section>
 
-        <section class="my-7">
-            <div class="border rounded-md bg-light-grayish-blue flex justify-between p-2">
-                <span class="m-2"> <img src="/images/icon-plus.svg"></span>
-                <span class="font-bold m-1">0</span>
-                <span class="m-2.5"><img src="/images/icon-minus.svg"></span>
-            </div>
+        <section class="lightbox hidden lg:hidden  ">
+            <div class=" absolute top-0 left-0 border h-[100vh] w-full bg-black opacity-60"></div>
            
-            <div class="my-5 border rounded-md w-full p-4 bg-orange text-white flex justify-center ">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>
-                <p class="ml-4 text-sm ">Add to cart</p>
+                <div class="absolute grid items-center justify-center z-10 ">
+                    <svg class="exit-lightbox absolute top-10 right-60 ml-20" width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#fff" fill-rule="evenodd"/></svg>
+                    <div class="flex items-center relative justify-between p-4 h-2/3">
+                        <img class="previousIcon h-10 border p-3 bg-white rounded-2xl" src="/images/icon-previous.svg">
+                        <img class= "big-picture h-full   rounded-xl" src="/images/image-product-1.jpg" alt="product1">
+                        <img  class="nextIcon  h-10 border p-3 bg-white rounded-2xl" src="/images/icon-next.svg">
+                    </div>
+
+                    <div class="hidden h-2/3">
+                        <img class= "thumbnail h-full rounded-xl" src="/images/image-product-1.jpg" alt="product1">
+                        <img class= "thumbnail h-full rounded-xl" src="/images/image-product-2.jpg" alt="product1">
+                        <img class= "thumbnail h-full rounded-xl" src="/images/image-product-3.jpg" alt="product1">
+                        <img class= "thumbnail h-full rounded-xl" src="/images/image-product-4.jpg" alt="product1">
+
+
+                    </div>
+
+
+                   
+
+                    <div class="my-0">
+                        <ul class="flex  my-0 justify-center items-center ">
+                            <li class="mx-4 w-20"><img class="thumbnails border rounded-md hover:border-orange hover:border-4 hover:bg-white hover:opacity-40" src="/images/image-product-1-thumbnail.jpg"></li>
+                            <li class="mx-4 w-20"><img class="thumbnails border rounded-md hover:border-orange hover:border-4 hover:bg-white hover:opacity-40" src="/images/image-product-2-thumbnail.jpg"></li>
+                            <li class="mx-4 w-20"><img class="thumbnails border rounded-md hover:border-orange hover:border-4 hover:bg-white hover:opacity-40" src="/images/image-product-3-thumbnail.jpg"></li>
+                            <li class="mx-4 w-20"><img class="thumbnails border rounded-md hover:border-orange hover:border-4 hover:bg-white hover:opacity-40" src="/images/image-product-4-thumbnail.jpg"></li>
+                        </ul>
+                    </div>    
+    
+                </div>
+                
+                
+               
+
+        </section>
+
+        <section class="cartbox hidden absolute top-20 bottom-0  right-5 h-80 w-80  border bg-white  rounded-lg font-kumb   lg:z-10">
+            <div>
+                <h1 class="m-3 font-bold">Cart</h1>
+                <div class="border-b my-3"></div>
+
+                <div class="empty hidden m-10">
+                    <p class="font-bold font-kumb text-black opacity-40 text-sm">The cart is empty</p>
+                </div>
+
+                <div class="cartItems p-3 hidden text-lg my-5 font-kumb">
+                    <div class="flex my-2 justify-between items-end">
+                        <img class="h-12 w-12" src="/images/image-product-1-thumbnail.jpg">
+                        <div class="text-sm">
+                            <p class="text-black opacity-40 font-bold">Fall LImited Edition</p>
+                            <div class="flex  text-sm">
+                                <p class="text-black opacity-40 font-bold">$125.00 x </p>
+                                <span class="quantity mx-2 text-black opacity-40 font-bold"> </span>
+                                <span class="totalAmount font-bold">$375.00</span>
+                            </div>
+                               
+                        </div>
+                        <img class="delete w-5 h-5 p-1 m-3 hover:border hover:border-orange hover:border-4" src="/images/icon-delete.svg">             
+                    </div>
+    
+                    <button class="border rounded-md w-full p-3 bg-orange text-white my-7">Checkout</button>
+    
+                </div>
+
+                
             </div>
         </section>
 
+        <section class="mobilemenu hidden lg:hidden">
+            <div class="absolute top-0 left-0 border h-[170vh] w-full bg-black opacity-40 "></div>
 
+            <div class="bg-white z-10 p-10 w-60 h-[170vh] absolute top-0">
+                <img class="remove-menu" src="/images/icon-close.svg">
+                <ul class="mt-10">
+                    <li class="my-3 font-bold font-kumb">Collection</li>
+                    <li class="my-3 font-bold font-kumb">Men</li>
+                    <li class="my-3 font-bold font-kumb">Women</li>
+                    <li class="my-3 font-bold font-kumb"><a href="/AboutUs.html">About</a></li>
+                    <li class="my-3 font-bold font-kumb">Contact</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        
+
+
+    
+        <section class="p-5 lg:p-20 lg:text-xl "> 
+            <section>
+                <h1 class="my-2 font-bold text-sm uppercase font-kumb text-orange">sneaker company</h1>
+    
+                <article class="font-kumb">
+                    <h1 class="font-bold text-2xl lg:text-5xl">Fall Limited Edition <br> Sneakers</h1>
+                    <p class="my-6 text-md text-black opacity-40 font-bold">
+                        These low-profile sneakers are your perfect casual wear 
+                        companion. Featuring a durable rubber outer sole, they'll withstand everything 
+                        the weather can offer.
+                    </p>
+                </article>
+            </section>
+    
+            <section class="mt-10 flex justify-between lg:block ">
+                <div class="flex justify-between lg:justify-start">
+                    <p class="font-bold text-2xl">$125.00</p>
+                    <p class="text-sm h-7 p-1 font-bold mx-4 text-orange bg-pale-orange">50%</p>
+                </div>
+                <div class="line-through"><p class="opacity-40">$250.00</p></div>
+                
+            </section>
+    
+            <section class="my-7 lg:flex justify-start">
+                <div class="border rounded-md bg-light-grayish-blue flex justify-between p-2 lg:w-56  lg:p-0 lg:items-center lg:h-10 lg:m-2">
+                    <span class="m-2.5"><img class="decrease"  src="/images/icon-minus.svg"></span>
+                    <span class=" zero font-bold m-1">0</span>
+                    <span class="m-2"> <img class="increase" src="/images/icon-plus.svg"></span>
+                   
+                </div>
+               
+                <div class=" addToCart my-5 border rounded-md w-full p-4 bg-orange text-white flex justify-center lg:w-60 lg:m-2 hover:bg-white hover:text-orange active:bg-pale-orange focus:outline-none focus:ring focus:ring-violet-300">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>
+                    <p class="ml-4 text-sm ">Add to cart</p>
+                </div>
+            </section>
+    
+    
+        </section>
     </main>
+    <script src="Product.js"></script>
+
+
+    
     
 </body>
 </html>
+

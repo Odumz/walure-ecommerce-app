@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A working calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="./Images/IMG-20220203-WA0001.jpg">
+    <script>
+      tailwind.config = {
+          theme: {
+            extend: {
+              
+              spacing: {
+                '100':"600px"
+
+              },
+
+              colors: {
+              'Orange': 'hsl(26, 100%, 55%)',
+              'Pale-orange': 'hsl(25, 100%, 94%)',
+              'Very-vark-blue': 'hsl(220, 13%, 13%)',
+              'Dark-grayish-blue': 'hsl(219, 9%, 45%)',
+              'Grayish-blue': 'hsl(220, 14%, 75%)',
+              'Light-grayish-blue': 'hsl(223, 64%, 98%)',
+              'White': 'hsl(0, 0%, 100%)',
+              'Black-(with 75% opacity for lightbox background)': 'hsl(0, 0%, 0%)',
+              'brown' : 'rgba(144,58,0,255)'
+              
+              },
+              fontFamily: {
+                'Family': ['Kumbh Sans']
+              }
+
+
+
+
+              
+
+
+
+            }
+          }
+        }
+
+    </script>
+    <title>E-Commerce site</title>
+  </head>
+  <body >
+    <nav class="fixed  w-full p-4  bg-white shadow  md:flex md:items-center justify-between flex md:justify-between md:px-32">
+      <div class="flex space-x-4 items-center">
+        <span class="h-7 text-3xl  cursor-pointer md:hidden block">
+          <ion-icon name="menu"></ion-icon>
+        </span>
+        <a href="/index.html"><img class=" cursor-pointer inline" src="./Images/logo.svg" alt="miracule's logo" ></a>
+      </div>
+      <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0"><a href="#Collections" class="font-medium  cursor-pointer  text-base text-Dark-grayish-blue hover:text-Orange duration-500">Collections</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#Men" class="font-medium cursor-pointer  text-base text-Dark-grayish-blue hover:text-Orange duration-500">Men</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#Women" class="font-medium cursor-pointer  text-base text-Dark-grayish-blue hover:text-Orange duration-500">Women</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#About" class="font-medium cursor-pointer  text-base text-Dark-grayish-blue hover:text-Orange duration-500">About</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#Contact" class="font-medium cursor-pointer  text-base text-Dark-grayish-blue hover:text-Orange duration-500">Contact</a></li>
+      </ul>
+      <div class="md:flex md:justify-end space-x-4 items-center flex md:items-center justify-end md:space-x-14">
+         <svg  class=" cursor-pointer" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" class="hover:fill-Orange duration-900" fill="#69707D" fill-rule="nonzero"/></svg>
+            <span class=" cursor-pointer">
+              <img class="md:w-9 w-6 md:h-9 inline" src="./Images/image-avatar.png" alt="image">
+            </span>
+      </div>
+    </nav>
+    <section style="background-image: url('./Images/image-product-1.jpg');" class="bg-no-repeat w-full  bg-cover bg-center">
+      <div class=" py-32 flex  text-white duration-500 flex-col items-center justify-center w-full md:h-full h-full  lg:p12">
+        <h1 class="text-center font-semibold text-5xl mt-4 lg:text-9xl lg:max-w-5xl tracking-tight">
+          Greatness Coming Forever
+        </h1>
+        <p class="mt-6 md:text-black text-black font-bold text-sm tracking-tight text-center uppercase max-w-2xl">
+          THE MID COURT &amp; MID ACE, NOW AVAILABLE IN MULTIPLE COLOURWAYS
+        </p>
+        <div style="color:#000000; " class="flex flex-col lg:space-x-6  lg:space-y-0 space-y-6 mt-6 lg:mt-8 lg:grid lg:grid-cols-2">
+          <a href="/collections/men-new-arrivals-footwear" class="group   overflow-hidden select-none transition whitespace-nowrap duration-500 px-8 active:border-black active:text-white text-sm text-center hover:bg-black hover:text-white bg-white flex justify-center items-center h-11 button--template--14177261682755__16354243429b15dc0e" name="">
+            <span class="capsized-text ">
+              SHOP MEN
+            </span>
+          </a>
+        <a href="/collections/women-new-arrivals-footwear" class="group overflow-hidden select-none transition whitespace-nowrap duration-500 px-8 active:border-black active:text-white favorit text-sm text-center hover:bg-black hover:text-white bg-white flex justify-center items-center h-11 button--template--14177261682755__16354243429b15dc0e" name="">
+          <span class="capsized-text">
+            SHOP WOMEN
+          </span>
+        </a>
+      </div>
+      </div>
+    </section>
+    <div id="shopify-section-template--14177261682755__162990680228b8f042" class="shopify-section">
+      <section class='flex flex-col mt-24' data-component='productsSlider'>
+        <div class='flex  group next flex-col items-center lg:justify-between group  open ' data-toggle-wrapper data-component='slider'>
+          <button class='flex items-center w-full transition border-b border-black cursor-pointer group-open:border-white ' data-toggle data-target='32c3334e-35bb-4c00-a554-42fcd4907643'>
+            <div class='w-auto p-4 group-open:w-full lg:group-open:w-auto'>
+              <p class='text-4xl font-medium tracking-tight text-center favorit lg:text-5xl'>Men Collection</p>
+            </div>
+            <div class=' order-3 w-auto p-4 ml-auto cursor-pointer group-open:hidden lg:group-open:flex group-open:w-full lg:order-2 lg:group-open:w-auto'>
+              <a href="/collections/men-all" class="group select-none transition whitespace-nowrap duration-500 px-8 active:border-black active:text-white favorit text-sm text-center flex justify-center items-center h-11 text-black border border-black border lg:hover:bg-black lg:hover:text-white hidden lg:flex w-full opacity-0 pointer-events-none group-open:opacity-100 group-open:pointer-events-auto" name="">
+                <span class="capsized-text ">VIEW THE COLLECTION</span>
+              </a> 
+            </div>
+          </button>
+        <div data-target-slider='32c3334e-35bb-4c00-a554-42fcd4907643' class='relative items-center order-2 w-full overflow-y-hidden transition-all duration-500 lg:order-3 lg:group-open:pb-12 cursor-grab'>
+          <div class='flex w-full h-full absolute items-center pointer-events-none '>
+            <button class='p-5 bg-white transform opacity-0 -mt-16 lg:-mt-28 translate-y-1 duration-500 transition-all group-prev:translate-y-0 group-prev:opacity-100 group-prev:pointer-events-auto pointer-events-none rounded-sm flex items-center justify-center	absolute my-auto z-10 left-4 lg:left-10 ' data-prev>
+              <span class='absolute inset-0 flex items-center justify-center m-auto transform rotate-180'>
+                <svg width="4" height="6" viewBox="0 0 4 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.38419e-07 -1.74846e-07L4 3.0225L-2.38498e-08 6L2.38419e-07 -1.74846e-07Z" fill="black"/>
+                </svg>  
+              </span>
+            </button>
+            <button class='p-5 bg-white transform opacity-0 -mt-16 lg:-mt-28 translate-y-1 duration-500 transition-all group-next:translate-y-0 group-next:opacity-100 group-next:pointer-events-auto pointer-events-none rounded-sm flex items-center justify-center absolute my-auto z-10 right-4 lg:right-10 ' data-next>
+              <span class='absolute inset-0 flex items-center justify-center m-auto'>
+                <svg width="4" height="6" viewBox="0 0 4 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.38419e-07 -1.74846e-07L4 3.0225L-2.38498e-08 6L2.38419e-07 -1.74846e-07Z" fill="black"/>
+                </svg>  
+              </span>
+            </button>
+          </div>
+        </div>
+        </div>
+      </section>
+    </div>
+    <div class="contain gap-0.5 w-full grid  h-full grid-cols-4 lg:grid">
+      <div> 
+        <a href="/Product.html"><img class="mr-1" src="./Images/image-product-1.jpg"></a>
+          <a href="/collections/men-all/products/mid-court-mix-grey" class="flex flex-col items-center justify-center px-4 text-center">
+            <h6 class="text-xs whitespace-normal favorit font-bold lg:text-sm">LOUIS VUITON</h6>
+            <div class="text-xs favorit lg:text-sm">
+              <div class="price--outer ">
+                <span class="price font-bold">$125</span>
+              </div>
+            </div>
+          </a>
+      </div>
+      <div>
+        <a href="/product2.html"><img class="mr-1" src="./Images/image-product-2.jpg"></a>
+          <a href="/collections/men-all/products/mid-court-mix-grey" class="flex flex-col items-center justify-center px-4 text-center">
+            <h6 class="text-xs whitespace-normal favorit font-bold lg:text-sm">NIKE</h6>
+            <div class="text-xs favorit lg:text-sm">
+              <div class="price--outer ">
+                <span class="price font-bold">$170</span>
+              </div>
+            </div>
+          </a>
+      </div>
+      <div>
+        <a href="/product3.html"><img class="mr-1" src="./Images/image-product-3.jpg"></a>
+          <a href="/collections/men-all/products/mid-court-mix-grey" class="flex flex-col items-center justify-center px-4 text-center">
+            <h6 class="text-xs whitespace-normal favorit font-bold lg:text-sm">BLACK WOLF</h6>
+            <div class="text-xs favorit lg:text-sm">
+              <div class="price--outer ">
+                <span class="price font-bold">$300</span>
+              </div>
+             </div>
+          </a>
+      </div>
+      <div>
+       <a href="/product4.html"><img class="" src="./Images/image-product-4.jpg"></a> 
+          <a href="/collections/men-all/products/mid-court-mix-grey" class="flex flex-col items-center justify-center px-4 text-center">
+            <h6 class="text-xs whitespace-normal favorit font-bold lg:text-sm">GUCCI</h6>
+            <div class="text-xs favorit lg:text-sm">
+              <div class="price--outer ">
+                <span class="price font-bold">$200</span>
+              </div>
+             </div>
+          </a>
+      </div>
+    </div>
+    <div class="w-full px-5 mt-7 pb-4 lg:hidden">
+      <a href="/collections/men-all" class="group relative overflow-hidden select-none transition whitespace-nowrap duration-500 px-8 active:border-black active:text-white favorit text-sm text-center flex justify-center items-center h-11 justify-center transition w-full text-black border-black border" name="">
+        <span class="capsized-text ">VIEW THE COLLECTION</span>
+      </a>
+    </div>
+    <footer class="bg-brown text-white p-6 h-86 mt-24  lg:grid grid-cols-4 gap-x-4 items-center text-xl">
+      <div>
+          <div class="mb-3 w-24 ml-3 mt-7">
+            <div class="space-x-4 items-center cursor-pointer">
+              <svg width="138" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M8.217 20c4.761 0 7.519-.753 7.519-4.606 0-3.4-3.38-4.172-6.66-4.682l-.56-.085-.279-.041-.35-.053c-2.7-.405-3.18-.788-3.18-1.471 0-.478.49-1.331 2.843-1.331 2.455 0 3.493.647 3.493 1.87v.134h4.281v-.133c0-2.389-1.35-5.238-7.774-5.238-5.952 0-7.201 2.584-7.201 4.752 0 3.097 2.763 4.086 7.223 4.675.21.028.433.054.659.081 1.669.197 3.172.42 3.172 1.585 0 1.01-1.615 1.222-3.298 1.222-2.797 0-3.784-.593-3.784-1.92v-.134H.002L0 14.926v.317c.008.79.118 1.913 1.057 2.862C2.303 19.362 4.712 20 8.217 20Zm13.21 0v-7.49c0-2.104.547-4.423 4.176-4.423 3.915 0 3.778 2.777 3.768 4.042V20h4.18v-7.768c0-2.264-.176-7.766-6.732-7.766-2.778 0-4.192.911-5.195 2.28h-.197V4.467H17.22V20h4.207Zm21.959 0c5.094 0 7.787-2.07 8.217-5.405H47.53c-.386 1.02-1.63 1.72-4.143 1.72-2.721 0-3.962-1.03-4.25-3.106h12.527c.24-2.13-.029-5.417-3.026-7.44v.005c-1.312-.915-3.056-1.465-5.251-1.465-5.24 0-8.336 2.772-8.336 7.845 0 5.17 3.02 7.846 8.336 7.846Zm4.099-9.574h-8.188c.486-1.574 1.764-2.431 4.089-2.431 2.994 0 3.755 1.267 4.099 2.431ZM70.499 20V4.457H66.29V6.74h-.176c-1.053-1.377-2.809-2.283-5.677-2.283-6.433 0-7.225 5.293-7.253 7.635v.137c0 2.092.732 7.771 7.241 7.771 2.914 0 4.684-.818 5.734-2.169h.131V20H70.5Zm-8.854-3.623c-3.996 0-4.447-3.032-4.447-4.148 0-1.21.426-4.148 4.455-4.148 3.631 0 4.374 2.044 4.374 4.148 0 2.35-.742 4.148-4.382 4.148ZM88.826 20l-6.529-9.045 6.588-6.488h-5.827l-6.836 6.756V0h-4.187v19.954h4.187V16.94l3.02-2.976L83.6 20h5.226Zm9.9 0c5.094 0 7.786-2.07 8.217-5.405h-4.074c-.387 1.02-1.63 1.72-4.143 1.72-2.721 0-3.962-1.03-4.25-3.106h12.527c.24-2.13-.029-5.417-3.026-7.44v.005c-1.312-.915-3.057-1.465-5.251-1.465-5.24 0-8.336 2.772-8.336 7.845 0 5.17 3.02 7.846 8.336 7.846Zm4.098-9.574h-8.187c.485-1.574 1.763-2.431 4.089-2.431 2.994 0 3.755 1.267 4.098 2.431ZM112.76 20v-6.97c0-2.103.931-4.542 4.05-4.542 1.33 0 2.393.236 2.785.346l.67-3.976c-.728-.16-1.626-.392-2.757-.392-2.665 0-3.622.794-4.486 2.282h-.262V4.466h-4.21V20h4.21Zm17.221 0c4.761 0 7.519-.753 7.519-4.606 0-3.4-3.38-4.172-6.66-4.682l-.56-.085-.279-.041-.349-.053c-2.701-.405-3.181-.788-3.181-1.471 0-.478.49-1.331 2.843-1.331 2.455 0 3.493.647 3.493 1.87v.134h4.282v-.133c0-2.389-1.35-5.238-7.775-5.238-5.952 0-7.201 2.584-7.201 4.752 0 3.097 2.763 4.086 7.224 4.675.21.028.432.054.658.081 1.669.197 3.172.42 3.172 1.585 0 1.01-1.615 1.222-3.298 1.222-2.796 0-3.784-.593-3.784-1.92v-.134h-4.319l-.001.301v.317c.008.79.117 1.913 1.056 2.862 1.246 1.257 3.655 1.895 7.16 1.895Z" fill="#fff" fill-rule="nonzero"/></svg>
+            </div>
+          </div>
+  
+          <div class="flex ">
+              <i class="m-3"><img src="./Images/icon-phone.svg" alt="phone-icon"></i>
+              <p class="m-2 lg:text-base text-sm font-light">Phone: +2349070229096, +23490964146</p>
+          </div>
+          <div class="flex justify-item-stretch space-x-0 ">
+             <span class="m-3"><img src="./Images/icon-email.svg" alt="phone-icon"></span>   
+              <span class="m-1.5 pl-1.5 font-light text-base lg:text-lg">Oluwaleyemiracule@gmail.com</span>
+          </div>
+      </div>
+      <div>
+          <ul class="mt-11 lg:mt-32 font-light text-base">
+              <li class="ml-3 mt-4  cursor-pointer">About Us</li>
+              <li class="ml-3 mt-4 cursor-pointer">Jobs</li>
+              <li class="ml-3 mt-4 cursor-pointer">Press</li>
+              <li class="ml-3 mt-4 cursor-pointer">Blog</li>
+          </ul>
+      </div>
+      <div>
+          <ul class="mt-11 lg:mt-24 font-light text-base">
+              <li class="ml-3 mt-4 cursor-pointer">Contact Us</li>
+              <li class="ml-3 mt-4 cursor-pointer">Terms</li>
+              <li class="ml-3 mt-4 cursor-pointer">Privacy</li>
+          </ul>
+      </div>
+      <div class="mt-7 flex space-x-2 justify-center">
+        <span>
+          <a href=" https://www.facebook.com/Oluwaleye-Miracle-106204571715908/"><img src="./Images/facebook.png" alt="twitter-icon" class="w-6 lg:w-9 cursor-pointer"></a>
+        </span>
+        <span>
+          <a href="https://twitter.com/Trader_Miracule?t=BwRamskh4twpH5n9OMvucg&s=09/"> <img src="./Images/Twitter.png" alt="twitter-icon" class="w-6 lg:w-9 cursor-pointer"></a>
+        </span>
+        <span>
+          <a href="https://www.instagram.com/miracule_smart?r=nametag/"><img src="./Images/instagram-235.png" alt="facebook-icon" class="w-6 lg:w-9 cursor-pointer"></a>
+        </span>
+      </div>
+  
+  </footer>
+  </body>
+</html>

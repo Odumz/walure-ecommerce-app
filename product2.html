@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A working calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="./Images/IMG-20220203-WA0001.jpg">
+    <script>
+      tailwind.config = {
+          theme: {
+            extend: {
+              
+              spacing: {
+                '100':"600px"
+
+              },
+
+              colors: {
+              'Orange': 'hsl(26, 100%, 55%)',
+              'Pale-orange': 'hsl(25, 100%, 94%)',
+              'Very-vark-blue': 'hsl(220, 13%, 13%)',
+              'Dark-grayish-blue': 'hsl(219, 9%, 45%)',
+              'Grayish-blue': 'hsl(220, 14%, 75%)',
+              'Light-grayish-blue': 'hsl(223, 64%, 98%)',
+              'White': 'hsl(0, 0%, 100%)',
+              'Black-(with 75% opacity for lightbox background)': 'hsl(0, 0%, 0%)',
+              'brown' : 'rgba(144,58,0,255)',
+              'Gold-sand' : 'rgba(227,187,128,255)',
+              'jaffa' : 'rgba(240,143,65,255)',
+              'manatee' : 'rgba(151,152,156,255)',
+              'Derby' : 'rgba(255,238,214,255)',
+              'Link-water' : 'rgba(247,248,253,255)'
+              },
+              fontFamily: {
+                'Family': ['Kumbh Sans']
+              }
+
+
+
+
+              
+
+
+
+            }
+          }
+        }
+
+    </script>
+    <title>E-Commerce site</title>
+  </head>
+  <body >
+    <nav class="fixed  w-full p-4  bg-white shadow  md:flex md:items-center justify-between flex md:justify-between md:px-32">
+      <div class="flex space-x-4 items-center">
+        <span class="h-7 text-3xl  cursor-pointer md:hidden block">
+          <ion-icon name="menu"></ion-icon>
+        </span>
+        <a href="/index.html"><img class=" cursor-pointer inline" src="./Images/logo.svg" alt="miracule's logo" ></a>
+      </div>
+      <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0"><a href="#Collections" class="font-medium  cursor-pointer  text-base text-Dark-grayish-blue hover:text-Orange duration-500">Collections</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#Men" class="font-medium cursor-pointer  text-base text-Dark-grayish-blue hover:text-Orange duration-500">Men</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#Women" class="font-medium cursor-pointer  text-base text-Dark-grayish-blue hover:text-Orange duration-500">Women</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#About" class="font-medium cursor-pointer  text-base text-Dark-grayish-blue hover:text-Orange duration-500">About</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#Contact" class="font-medium cursor-pointer  text-base text-Dark-grayish-blue hover:text-Orange duration-500">Contact</a></li>
+      </ul>
+      <div class="md:flex md:justify-end space-x-4 items-center flex md:items-center justify-end md:space-x-14">
+         <svg  class=" cursor-pointer" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" class="hover:fill-Orange duration-900" fill="#69707D" fill-rule="nonzero"/></svg>
+            <span class=" cursor-pointer">
+              <img class="md:w-9 w-6 md:h-9 inline" src="./Images/image-avatar.png" alt="image">
+            </span>
+      </div>
+    </nav>
+    <main class="justify-center items-center mx-auto lg:pt-40 lg:mb-0 mb-24 lg:w-2/4 lg:gap-9 lg:grid  lg:grid-cols-2">
+        <section class="justify-center items-center mx-auto">
+            <div class=" ">
+             <img class="absolute bottom-20 mt-20 ml-5 top-20 h-9 border p-3 bg-white rounded-2xl lg:hidden" src="./images/icon-previous.svg"> 
+              <img class=" h-50 lg:rounded-lg lg:w-4/5 lg:mb-5 cursor-pointer" src="./Images/image-product-2.jpg" alt="product-1">
+              <img class="absolute right-0 bottom-20 mt-20 mr-5 top-20 h-9 border p-3 bg-white rounded-2xl lg:hidden" src="./images/icon-next.svg">
+            </div>
+            <div class="hidden lg:grid w-4/5 gap-5 lg:grid-cols-4">
+            <div>
+               <img class="rounded-lg hover:opacity-70 hover:cursor-pointer" src="./Images/image-product-1-thumbnail.jpg">
+            </div>
+            <div>
+               <img class="rounded-lg opacity-50 hover:cursor-pointer" src="./Images/image-product-2-thumbnail.jpg">
+            </div>
+            <div>
+                <img class="rounded-lg hover:opacity-70 hover:cursor-pointer" src="./Images/image-product-3-thumbnail.jpg">
+            </div>
+            <div>
+               <img class="rounded-lg hover:opacity-70 hover:cursor-pointer" src="./Images/image-product-4-thumbnail.jpg">
+            </div>
+            </div>
+        </section>
+        <section class="px-11 lg:px-0 lg:w-full lg:mt-0 mt-4">
+            <h6 class="text-jaffa font-bold text-xs">SNEAKER COMPANY</h6>
+            <p class="font-bold text-4xl lg:mt-4 lg:mb-4">NIKE</p>
+            <span class="text-sm text-manatee drop-shadow-xl">
+                This low profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer
+            </span>
+            <div class="mt-6 grid lg:grid-cols-2 grid-cols-3 items-center">
+                <span class="font-bold text-2xl">
+                $170.00
+                </span>
+                <span class="text-Orange text-shadow-Orange text-shadow-lg text-sm font-bold border text-center w-10 rounded-md lg:ml-0 ml-3 bg-Derby">
+                    50%
+                </span>
+                <span class="font-bold ml-9 lg:ml-0 text-manatee">
+                    <s>$240.00</s>
+                </span>
+            </div>
+            <div class="lg:grid lg:grid-cols-2 lg:gap-3">
+            <div class="border mt-6 items-center justify-items-center p-2 bg-Link-water rounded-lg grid grid-cols-3">
+                <svg class="cursor-pointer" width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
+                <span class="font-bold"> 0 </span>
+                <svg class="cursor-pointer" width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
+            </div>
+            <div class="border shadow-Orange cursor-pointer  items-center flex justify-center gap-3 text-center p-3 mt-6 rounded-lg bg-Orange">
+                <svg  class=" items-center" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#ffff" fill-rule="nonzero"/></svg>
+                <span class="text-white text-xs font-bold">Add to Cart</span>
+            </div>
+            </div>
+            </section>
+     
+</body>
+</html>
